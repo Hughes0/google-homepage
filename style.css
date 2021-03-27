@@ -1,0 +1,146 @@
+body {
+    font-family: arial, sans-serif;
+    font-size: 15px;
+    height: 100%;
+    -webkit-appearance: none;
+    margin: 0;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-rows: 5vh 90vh 5vh;
+    grid-template-columns: 2fr 5fr 2fr;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+}
+
+#header-left {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+#header-right {
+    grid-area: 1 / 3 / 2 / 4;
+    text-align: right;
+}
+
+#main {
+    grid-area: 2 / 2 / 3 / 3;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#searchbar {
+    width: 600px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    display: block;
+}
+
+#searchbar:hover {
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+#searchbar input {
+    font-size: 20px;
+    height: 28px;
+    width: 500px;
+    border: none;
+    outline: none;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+#searchbar img {
+    margin-top: 5px;
+    margin-left: 10px;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+}
+
+#searchbar button {
+    margin-top: 5px;
+    margin-left: 10px;
+    vertical-align: middle;
+    background-image: url(
+'https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-39-512.png');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+#searchbar button:hover {
+    cursor: pointer;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+#buttons button {
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    outline: none;
+    border-radius: 5px;
+}
+
+#buttons button:hover {
+    cursor: pointer;
+    border: 1px solid #ededed;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+#footer-left {
+    grid-area: 3 / 1 / 4 / 2;
+    background-color: #f2f2f2;
+    color: #70757a;
+}
+
+#footer-center {
+    grid-area: 3 / 2 / 4 / 3;
+    text-align: center;
+    background-color: #f2f2f2;
+    color: #70757a;
+}
+
+#footer-right {
+    grid-area: 3 / 3 / 4 / 4;
+    text-align: right;
+    background-color: #f2f2f2;
+    color: #70757a;
+}
+
+img {
+    vertical-align: middle;
+}
